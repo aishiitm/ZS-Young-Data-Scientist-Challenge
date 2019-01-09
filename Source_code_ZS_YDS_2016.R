@@ -31,7 +31,7 @@ fit <- randomForest(as.factor(target_bin)~.,data=train, importance=TRUE,ntree=15
 #Plotting 15 top variables in the order of their importance-Package required'randomForest'
 varImpPlot(fit,sort=TRUE,n.var=15)
 
----------------------------------------------Code for prediction-------------------------------------------------------------------------
+#---------------------------------------------Code for prediction-------------------------------------------------------------------------
 #Reading the test data given
 test<-read.csv("test.csv",header=TRUE,na.strings = c(""))
 
